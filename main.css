@@ -129,3 +129,27 @@
     color: #fff; /* Texto branco no hover */
   }
   
+  .styled-button {
+    background: linear-gradient(90deg, #ff8a00, #e52e71); /* Gradiente */
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .styled-button:hover {
+    background: linear-gradient(90deg, #e52e71, #ff8a00); /* Inverte o gradiente */
+    transform: scale(1.05); /* Aumenta ligeiramente o botão */
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3); /* Mais sombra no hover */
+  }
+  
+  .styled-button:active {
+    transform: scale(0.95); /* Encolhe ao clicar */
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+  }
+  

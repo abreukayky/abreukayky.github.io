@@ -25,7 +25,10 @@ prev.addEventListener('click', () => {
 // Atualiza o carrossel quando a janela é redimensionada
 window.addEventListener('resize', updateCarousel);
 
-window.addEventListener('click', () => {
-  const audio = document.getElementById('background-music');
-  audio.muted = false; // Ativa o som após interação
-});
+const music = document.getElementById('background-music');
+  const playButton = document.getElementById('play-music');
+
+  playButton.addEventListener('click', () => {
+    music.play(); // Reproduz a música
+    playButton.style.display = 'none'; // Oculta o botão após tocar
+  });
