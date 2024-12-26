@@ -24,3 +24,8 @@ prev.addEventListener('click', () => {
 
 // Atualiza o carrossel quando a janela é redimensionada
 window.addEventListener('resize', updateCarousel);
+
+window.addEventListener('click', () => {
+  const audio = document.getElementById('background-music');
+  audio.muted = false; // Ativa o som após interação
+});
