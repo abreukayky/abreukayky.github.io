@@ -1,0 +1,120 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+    background-image: url(amo\ essa\ foto.jpg);
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    width: 600px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
+    padding-top: 8px; /* Espaço no topo */
+}
+.card > .question {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%; /* Faz com que o texto ocupe a altura total do card */
+}
+
+.card > .question p {
+    font-size: 32px; /* Tamanho da fonte original */
+    font-family: sans-serif; /* Família de fonte elegante */
+    font-weight: 600; /* Peso para destacar o texto */
+    text-align: center; /* Centraliza o texto horizontalmente */
+}
+
+
+
+.buttons {
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    width: 100%; /* Garante que o contêiner ocupe toda a largura */
+    height: 100%; /* Garante que o contêiner ocupe toda a altura do card */
+}
+
+.btn-yes{
+    display: none;
+}
+
+.btn-yes, .btn-no {
+    height: 48px;
+    width: 100px;
+
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-yes {
+    background-color: #9AFF9A;
+}
+
+.btn-no {
+    position: absolute; /* Para permitir o posicionamento aleatório */
+            height: 48px;
+            width: 100px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            background-color: #FF4040;
+            color: #fff;
+}
+
+.answer {
+    display: none;
+}
+
+.answer > p{
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    text-align: center; /* Garante que o texto fique centralizado */
+    height: 100%; /* Ocupa todo o espaço do card */
+    width: 100%; /* Garante a largura total do contêiner */
+    font-size: 24px; /* Ajuste para um tamanho de fonte confortável */
+    font-family: 'Arial', sans-serif; /* Torna o texto legível e elegante */
+    font-weight: bold; /* Dá destaque ao texto */
+    color: #FF69B4; /* Rosa vibrante para manter o tema romântico */
+    line-height: 1.5; /* Melhora o espaçamento entre as linhas */
+}
+
+
+.link-natal {
+    margin-top: 8px; /* Pequeno espaço no topo */
+    text-align: center;
+}
+
+.link-natal a {
+    text-decoration: none;
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #FF6EB4;
+    padding: 8px 16px;
+    border: 2px solid #FF6EB4;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.link-natal a:hover {
+    background-color: #FF6EB4;
+    color: #fff;
+}
